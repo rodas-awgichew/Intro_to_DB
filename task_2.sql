@@ -7,7 +7,7 @@ CREATE TABLE Authors (
     birth_date DATE
 );
 
-CREATE TABLE BOOKS (
+CREATE TABLE Books (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     genre VARCHAR(100),
@@ -17,7 +17,7 @@ CREATE TABLE BOOKS (
     FOREIGN KEY (author_id) REFERENCES AUTHORS(author_id)
 );
 
-CREATE TABLE CUSTOMERS (
+CREATE TABLE Cusomers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE,
@@ -25,7 +25,7 @@ CREATE TABLE CUSTOMERS (
     address TEXT
 );
 
-CREATE TABLE ORDERS (
+CREATE TABLE Orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
     order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -33,7 +33,7 @@ CREATE TABLE ORDERS (
     FOREIGN KEY (customer_id) REFERENCES CUSTOMERS(customer_id)
 );
 
-CREATE TABLE ORDER_DETAILS (
+CREATE TABLE Order_Details (
     order_detail_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
     book_id INT,
