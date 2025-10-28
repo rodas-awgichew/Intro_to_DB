@@ -1,6 +1,6 @@
 # Intro_to_DB
 
-A teaching / demo repository that contains examples, exercises, and utilities for learning the fundamentals of relational databases and SQL. This repository provides schema examples, SQL scripts, sample data, notebooks, and helper scripts to practice schema design, CRUD operations, joins, indexing, transactions, and basic performance tuning.
+A demo repository that contains examples, exercises, and utilities for learning the fundamentals of relational databases and SQL. This repository provides schema examples, SQL scripts, sample data, notebooks, and helper scripts to practice schema design, CRUD operations, joins, indexing, transactions, and basic performance tuning.
 
 ## Project overview
 Intro_to_DB is intended to be a small, easy-to-follow collection of resources for learners and instructors:
@@ -43,16 +43,6 @@ cd Intro_to_DB
     ```bash
     sqlite3 demo.db < sql/init_schema.sql
     sqlite3 demo.db < sql/seed_data.sql
-    ```
-- PostgreSQL:
-  - Create database and run SQL scripts:
-    ```bash
-    psql -h localhost -U youruser -d yourdb -f sql/init_schema.sql
-    psql -h localhost -U youruser -d yourdb -f sql/seed_data.sql
-    ```
-  - Or use a provided helper script (if present):
-    ```bash
-    python scripts/setup_db.py --engine postgres --db-name intro_db
     ```
 
 3. Run notebooks:
