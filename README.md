@@ -79,11 +79,6 @@ Contributions are welcome. A suggested workflow:
 3. Run tests locally.
 4. Open a pull request with a clear description of the change.
 
-Guidelines:
-- Keep exercises small and focused.
-- Add example answers in a separate folder (e.g., `solutions/`) and clearly mark them.
-- If adding data, prefer small, synthetic datasets that are easy to load.
-
 ## License
 This repository does not include a license file by default. Consider adding a LICENSE (for example, MIT) to clarify usage and contributions.
 
